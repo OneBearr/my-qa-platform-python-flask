@@ -6,16 +6,16 @@ A question-and-answer platform website where questions are displayed, asked and 
 
 ### Features:
 
-1. Signup by email, email verification code, username and password.  
-   ![signup page](./screenshots/signup page.png)  
-2. Login by email and password.  
-   ![login page](./screenshots/login page.png)
+1. Signup by email, email verification code, username and password.
+   ![signup page](./screenshots/signup_page.png)  
+2. Login by email and password.
+   ![login page](./screenshots/login_page.png)
 3. Display all posts or search posts by keyword.
    ![login page](./screenshots/homepage.png)
 4. Publish a QA post.
-   ![login page](./screenshots/new post.png)
+   ![login page](./screenshots/new_post.png)
 5. Answer a QA post.
-   ![login page](./screenshots/comment a post.png)
+   ![login page](./screenshots/comment.png)
 
 ### Development Tools:
 
