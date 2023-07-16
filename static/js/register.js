@@ -21,7 +21,7 @@ function bindEmailCaptchaClick() {
             success: function (result) {
                 const code = result['code'];
                 if (code == 200) {
-                    let countdown = 5;
+                    let countdown = 60;
                     // Before the countdown starts, cancel the click event of the button
                     $this.off("click");
                     const timer = setInterval(function () {

@@ -7,7 +7,7 @@ A question-and-answer platform website where questions are displayed, asked and 
 ### Features:
 
 1. Signup by email, email verification code, username and password.
-   ![signup page](./screenshots/signup_page.png)  
+   ![signup page](./screenshots/signup_page.png)
 2. Login by email and password.
    ![login page](./screenshots/login_page.png)
 3. Display all posts or search posts by keyword.
@@ -24,5 +24,5 @@ Python, Flask, SQLAlchemy, MySQL, MySQL Workbench, HTML/CSS, JavaScript, Ajax, j
 ### Run the Program:
 
 1. Go to the project directory  
-$ `flask --app app run`  
+   $ `flask --app app run`
 2. Go to 127.0.0.1:5000

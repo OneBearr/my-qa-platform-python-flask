@@ -18,6 +18,7 @@ migrate = Migrate(app, db)
 app.register_blueprint(qa_bp)
 app.register_blueprint(auth_bp)
 
+
 # flask db init：only needs to be executed once
 # flask db migrate：Generate a migration script for the ORM model
 # flask db upgrade：Map the migration script into the database
@@ -29,13 +30,15 @@ def my_before_request():
     user_id = session.get("user_id")
     if user_id:
         user = UserModel.query.get(user_id)
-        setattr(g, "user", user)    # g: global
+        setattr(g, "user", user)  # g: global
     else:
         setattr(g, "user", None)
 
+
 @app.context_processor
 def my_context_processor():
-    return {"user": g.user}     # so this "user" can be used in any template
+    return {"user": g.user}  # so this "user" can be used in any template
+
 
 if __name__ == '__main__':
     app.run()

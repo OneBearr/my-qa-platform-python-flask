@@ -68,4 +68,3 @@ def search():
     keyword = request.args.get("keyword")
     questions = QuestionModel.query.filter(QuestionModel.title.contains(keyword)).all()
     return render_template("index.html", questions=questions)
-

@@ -14,5 +14,5 @@ MAIL_SERVER = "smtp.gmail.com"
 MAIL_USE_SSL = True
 MAIL_PORT = 465
 MAIL_USERNAME = "yixiongsheng@gmail.com"
-MAIL_PASSWORD = "yszkckejhuadtnrg"
+MAIL_PASSWORD = "the_generated_app_password_for_windows_computer"
 MAIL_DEFAULT_SENDER = "yixiongsheng@gmail.com"

@@ -30,7 +30,7 @@ def login():
                 # Cookies are not suitable for storing too much data, only suitable for storing a small amount of data
                 # Cookies are generally used to store login authorization
                 # The session in flask is encrypted and stored in cookie
-                session['user_id'] = user.id        # key-value pair
+                session['user_id'] = user.id  # key-value pair
                 return redirect("/")
             else:
                 print("Wrong password!")
@@ -65,6 +65,7 @@ def register():
             print(form.errors)
             # return "Login Failed"
             return redirect(url_for("auth.register"))
+
 
 @bp.route("/logout")
 def logout():

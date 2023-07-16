@@ -1,6 +1,8 @@
 import wtforms
 from wtforms.validators import Email, Length, EqualTo, InputRequired
 from models import UserModel, EmailCaptchaModel
+
+
 # from extensions import db
 
 
@@ -14,7 +16,7 @@ class RegisterForm(wtforms.Form):
 
     # Customized validation：
     # 1. Whether the mailbox has been registered
-    def validate_email(self, field):    # self: current object      field: Email field in the form
+    def validate_email(self, field):  # self: current object      field: Email field in the form
         email = field.data
         user = UserModel.query.filter_by(email=email).first()
         if user:
