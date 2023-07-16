@@ -23,5 +23,6 @@ Python, Flask, SQLAlchemy, MySQL, MySQL Workbench, HTML/CSS, JavaScript, Ajax, j
 
 ### Run the Program:
 
-Go to the project directory  
-$ `flask --app app run`
+1. Go to the project directory  
+$ `flask --app app run`  
+2. Go to 127.0.0.1:5000
